@@ -1,0 +1,35 @@
+{
+  "name": "web3xbar",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "kbar": "^0.1.0-beta.20",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-device-detect": "^2.0.0",
+    "react-dom": "17.0.2",
+    "react-toggle-dark-mode": "^1.0.4",
+    "react-tooltip": "^4.2.21"
+  },
+  "devDependencies": {
+    "@types/gtag.js": "^0.0.7",
+    "@types/react": "17.0.26",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "autoprefixer": "^10.3.6",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "11.1.2",
+    "eslint-plugin-react": "^7.26.1",
+    "postcss": "^8.3.8",
+    "prettier": "2.4.1",
+    "tailwindcss": "^2.2.16",
+    "typescript": "4.4.3"
+  }
+}
