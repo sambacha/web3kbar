@@ -10,7 +10,7 @@
 }
 
 * {
-  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
+   font-family: 'Inter', sans-serif;;
 }
 
 body {
@@ -43,163 +43,192 @@ body {
   background-size: 100% 150%;
 }
 /* font */
-
+/* cyrillic-ext */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Extra Light';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Extra Light'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdXLt.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-
+/* cyrillic */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Extra Light Condensed';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Extra Light Condensed'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdXLtCn.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-
+/* greek-ext */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Extra Light Condensed Oblique';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Extra Light Condensed Oblique'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdXLtCnObl.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
 }
-
+/* greek */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Extra Light Oblique';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Extra Light Oblique'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdXLtObl.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
 }
-
+/* vietnamese */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Book';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Book'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdBk.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
-
+/* latin-ext */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Book Condensed';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Book Condensed'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdBkCn.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
+/* latin */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Book Condensed Oblique';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Book Condensed Oblique'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdBkCnObl.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
+/* cyrillic-ext */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Book Oblique';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Book Oblique'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdBkObl.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-
+/* cyrillic */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Medium';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Medium'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdMd.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-
+/* greek-ext */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Medium Condensed';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Medium Condensed'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdMdCn.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
 }
-
+/* greek */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Medium Condensed Oblique';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Medium Condensed Oblique'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdMdCnObl.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
 }
-
+/* vietnamese */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Medium Oblique';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Medium Oblique'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdMdObl.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
-
+/* latin-ext */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Demi';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Demi'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdDemi.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
+/* latin */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Demi Condensed';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Demi Condensed'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdDemiCn.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
+/* cyrillic-ext */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Demi Condensed Oblique';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Demi Condensed Oblique'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdDemiCnObl.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-
+/* cyrillic */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Demi Oblique';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Demi Oblique'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdDemiObl.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-
+/* greek-ext */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Bold';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Bold'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdBold.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
 }
-
+/* greek */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Bold Condensed';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Bold Condensed'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdBoldCn.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
 }
-
+/* vietnamese */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Bold Condensed Oblique';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Bold Condensed Oblique'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdBoldCnObl.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
-
+/* latin-ext */
 @font-face {
-  font-family: 'ITC Avant Garde Gothic Std Bold Oblique';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: local('ITC Avant Garde Gothic Std Bold Oblique'),
-    url('/fonts/ITCAvantGarde/ITCAvantGardeStdBoldObl.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }

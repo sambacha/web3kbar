@@ -21,18 +21,18 @@ const action = (handleActionTheme: (value: boolean) => void): Action[] => {
     },
 
     createAction({
-      name: 'Github',
-      shortcut: ['g', 'h'],
-      keywords: 'sourcecode',
-      perform: () => window.open('#', '_blank'),
+      name: 'Sushi Relay',
+      shortcut: ['s', 's'],
+      keywords: 'sushiswap',
+      perform: () => window.open('https://app.sushirelay.com', '_blank'),
     }),
     {
-      name: 'iearn DAI',
-      address: '0x16de59092dAE5CcF4A1E6439D611fd0653f0Bd01',
-      id: 'yDAI',
-      shortcut: ['i', 'd'],
-      keywords: 'DAI',
-      perform: () => window.open('https://yearn.finance/vaults', '_blank'),
+      name: 'Manifold Finance',
+      address: '0xd084944d3c05cd115c09d072b9f44ba3e0e45921',
+      id: 'FOLD',
+      shortcut: ['t', '1'],
+      keywords: 'trending assets',
+      perform: () => window.open('https://analytics.sushi.com/tokens/0xd084944d3c05cd115c09d072b9f44ba3e0e45921', '_blank'),
     },
     {
       address: '0xd6aD7a6750A7593E092a9B218d66C0A814a3436e',
