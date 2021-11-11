@@ -17,30 +17,27 @@ const action = (handleActionTheme: (value: boolean) => void): Action[] => {
       name: 'Resume',
       shortcut: ['r'],
       keywords: 'resume cv',
-      perform: () => router.push('/'),
+      perform: () => router.push('/resume'),
     },
-
     createAction({
-      name: 'Sushi Relay',
-      shortcut: ['s', 's'],
-      keywords: 'sushiswap',
-      perform: () => window.open('https://app.sushirelay.com', '_blank'),
+      name: 'Github',
+      shortcut: ['g', 'h'],
+      keywords: 'sourcecode',
+      perform: () => window.open('https://github.com/asdf1899', '_blank'),
     }),
     {
-      name: 'Manifold Finance',
-      address: '0xd084944d3c05cd115c09d072b9f44ba3e0e45921',
-      id: 'FOLD',
-      shortcut: ['t', '1'],
-      keywords: 'trending assets',
-      perform: () => window.open('https://analytics.sushi.com/tokens/0xd084944d3c05cd115c09d072b9f44ba3e0e45921', '_blank'),
+      id: 'linkedinAction',
+      name: 'Linkedin',
+      shortcut: ['l', 'd'],
+      keywords: 'linkedin',
+      perform: () => window.open('https://www.linkedin.com/in/anas-araid/', '_blank'),
     },
     {
-      address: '0xd6aD7a6750A7593E092a9B218d66C0A814a3436e',
-      name: 'iearn USDC',
-      id: 'yUSDC',
-      shortcut: ['y', 'c'],
-      keywords: 'usdc',
-      perform: () => window.open('#', '_blank'),
+      id: 'instagramAction',
+      name: 'Instagram',
+      shortcut: ['i', 'g'],
+      keywords: 'instagram social contact dm',
+      perform: () => window.open('https://instagram.com/anas.araid', '_blank'),
     },
     {
       id: 'theme',
@@ -72,3 +69,4 @@ const action = (handleActionTheme: (value: boolean) => void): Action[] => {
 };
 
 export default action;
+
