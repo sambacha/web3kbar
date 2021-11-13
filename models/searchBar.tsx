@@ -1,5 +1,6 @@
 import React from "react";
-import { FocusRing, useFocusRing } from "@react-aria/focus";
+import { FocusRing } from "react-focus-rings";
+import "focus-rings/src/styles.css";
 
 function SearchBar() {
   const containerRef = React.useRef<HTMLDivElement>(null);
