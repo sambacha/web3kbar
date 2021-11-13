@@ -1,3 +1,6 @@
+import React from "react";
+import { FocusRing, useFocusRing } from "@react-aria/focus";
+
 function SearchBar() {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const inputRef = React.useRef<HTMLInputElement>(null);
