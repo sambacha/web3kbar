@@ -1,7 +1,7 @@
-import * as React from "react";
-import { useHistory, useLocation } from "react-router-dom";
-import { useRegisterActions } from "kbar";
-import data from "./data";
+import * as React from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
+import { useRegisterActions } from 'kbar';
+import data from './data';
 
 const searchId = randomId();
 
@@ -22,7 +22,7 @@ export default function SearchDocsActions() {
             parent: searchId,
             name: curr.name,
             shortcut: [],
-            keywords: "api reference docs",
+            keywords: 'api reference docs',
             section: curr.section,
             perform: () => history.push(curr.slug),
           });
@@ -38,13 +38,13 @@ export default function SearchDocsActions() {
       searchActions.length
         ? {
             id: searchId,
-            name: "Search docs…",
-            shortcut: ["?"],
-            keywords: "find",
-            section: "Documentation",
+            name: 'Search docs…',
+            shortcut: ['?'],
+            keywords: 'find',
+            section: 'Documentation',
           }
         : null,
-    [searchActions]
+    [searchActions],
   );
 
   useRegisterActions([rootSearchAction, ...searchActions].filter(Boolean));

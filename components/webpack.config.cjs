@@ -1,25 +1,25 @@
-const path = require("path");
-const { ESBuildMinifyPlugin } = require("esbuild-loader");
+const path = require('path');
+const { ESBuildMinifyPlugin } = require('esbuild-loader');
 
 module.exports = {
-  mode: "development",
+  mode: 'development',
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: ['.tsx', '.ts', '.js'],
   },
-  entry: path.resolve(__dirname, "Docs/index.tsx"),
+  entry: path.resolve(__dirname, 'Docs/index.tsx'),
   output: {
-    filename: "index.js",
-    path: path.resolve(__dirname, "dist"),
+    filename: 'index.js',
+    path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
     historyApiFallback: true,
-    static: path.resolve(__dirname, "dist"),
+    static: path.resolve(__dirname, 'dist'),
     hot: true,
   },
   optimization: {
     minimizer: [
       new ESBuildMinifyPlugin({
-        target: "es2015",
+        target: 'es2015',
         css: true,
       }),
     ],
@@ -28,19 +28,19 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: "esbuild-loader",
+        loader: 'esbuild-loader',
         exclude: /node_modules/,
         options: {
-          loader: "tsx",
+          loader: 'tsx',
         },
       },
       {
         test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: "asset/resource",
+        type: 'asset/resource',
       },
     ],
   },

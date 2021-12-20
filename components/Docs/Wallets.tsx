@@ -1,5 +1,5 @@
-import * as React from "react";
-import Code from "./Code";
+import * as React from 'react';
+import Code from './Code';
 
 export default function Wallets() {
   return (
@@ -10,12 +10,12 @@ export default function Wallets() {
         triggering actions even when kbar is hidden.
       </p>
       <p>
-        When registering an action, passing a valid property to{" "}
+        When registering an action, passing a valid property to{' '}
         <code>shortcut</code> will ensure that when users' keystroke pattern
         matches, that kbar will trigger that action.
       </p>
       <p>
-        Imagine if you wanted to open a link to Twitter when the user types{" "}
+        Imagine if you wanted to open a link to Twitter when the user types{' '}
         <kbd>g</kbd>+<kbd>t</kbd>, the action would look something like this:
       </p>
       <Code
@@ -28,7 +28,7 @@ export default function Wallets() {
       <p>
         You can also use shortcuts to open kbar at a specific parent action. For
         example, if a user types <kbd>?</kbd>, you want to open kbar with the
-        nested actions for "Search docs". Try it on this site – press{" "}
+        nested actions for "Search docs". Try it on this site – press{' '}
         <kbd>?</kbd> and you will see the results for searching through docs
         immediately shown.
       </p>

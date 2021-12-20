@@ -1,5 +1,5 @@
-import * as React from "react";
-import { useLocation } from "react-router";
+import * as React from 'react';
+import { useLocation } from 'react-router';
 
 export default function Reference() {
   return (
@@ -48,7 +48,7 @@ function Heading({ name }) {
     <h2
       id={name}
       style={{
-        background: location.hash === `#${name}` ? "yellow" : undefined,
+        background: location.hash === `#${name}` ? 'yellow' : undefined,
       }}
     >
       {name}

@@ -1,5 +1,5 @@
-import * as React from "react";
-import Code from "./Code";
+import * as React from 'react';
+import Code from './Code';
 
 export default function Actions() {
   return (
@@ -11,7 +11,7 @@ export default function Actions() {
         structure.
       </p>
       <p>
-        The way users register actions is by passing a list of action objects to{" "}
+        The way users register actions is by passing a list of action objects to{' '}
         <code>KBarProvider</code> or through <code>useRegisterActions</code>.
       </p>
       <p>The object looks like this:</p>
@@ -32,7 +32,7 @@ export default function Actions() {
         into our own representation of these objects, <code>ActionImpl</code>.
       </p>
       <p>
-        An <code>ActionImpl</code> is an internal implementation of the{" "}
+        An <code>ActionImpl</code> is an internal implementation of the{' '}
         <code>Action</code> interface:
       </p>
       <Code
@@ -42,23 +42,23 @@ export default function Actions() {
 }`}
       />
       <p>
-        You don't need to know too much of the specifics of{" "}
+        You don't need to know too much of the specifics of{' '}
         <code>ActionImpl</code> – we transform what the user passes to us to add
         a few extra properties that are useful to kbar internally.
       </p>
       <p>All you need to know is:</p>
       <ul>
         <li>
-          Pass initial list of actions if you have them to{" "}
+          Pass initial list of actions if you have them to{' '}
           <code>KBarProvider</code>
         </li>
         <li>
-          Register actions dynamically by using the{" "}
+          Register actions dynamically by using the{' '}
           <code>useRegisterActions</code> hook
         </li>
       </ul>
       <p>
-        Actions can have nested actions, represented by <code>parent</code>{" "}
+        Actions can have nested actions, represented by <code>parent</code>{' '}
         above. With this, we can do things like building a folder-like
         experience where toggling one action leads to displaying a "nested" list
         of other actions.
@@ -77,7 +77,7 @@ export default function Actions() {
         mounted.
       </p>
       <p>
-        Actions can be registered at runtime using the{" "}
+        Actions can be registered at runtime using the{' '}
         <code>useRegisterActions</code> hook. This dynamically adds and removes
         actions based on where the hook lives.
       </p>

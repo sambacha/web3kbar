@@ -23,13 +23,14 @@ const Index: NextPage = () => {
       )}
     >
       <KBarProvider
-        actions={actions(handleActionTheme)}
+        //   actions={actions(handleActionTheme)}
         options={{
           animations: {
             enterMs: 200,
             exitMs: 100,
           },
         }}
+        actions={[]}
       >
         <KBarContent />
         <Layout />

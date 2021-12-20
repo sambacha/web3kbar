@@ -1,5 +1,5 @@
-import * as React from "react";
-import Code from "./Code";
+import * as React from 'react';
+import Code from './Code';
 
 export default function GettingHelp() {
   return (

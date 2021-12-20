@@ -1,5 +1,5 @@
-import * as React from "react";
-import { useLocation } from "react-router";
+import * as React from 'react';
+import { useLocation } from 'react-router';
 
 export default function Reference() {
   return (
@@ -7,19 +7,23 @@ export default function Reference() {
       <h1>API Reference</h1>
       <Heading name="Sushi Relay" />
       <p>
-        Sushi Relay is built on top of OpenMEV. Sushi Relay provides front running and protection against MEV.
+        Sushi Relay is built on top of OpenMEV. Sushi Relay provides front
+        running and protection against MEV.
       </p>
       <Heading name="OpenMEV" />
       <p>
-        Aggregator of multiple private RPC endpoints, includes Flashbots, Ethermine, Bloxroute and more.
+        Aggregator of multiple private RPC endpoints, includes Flashbots,
+        Ethermine, Bloxroute and more.
       </p>
       <Heading name="MEV" />
       <p>
-        Miner Extracted Value. Front running, sandwich attacks, backrunning and other types of high frequency trading
+        Miner Extracted Value. Front running, sandwich attacks, backrunning and
+        other types of high frequency trading
       </p>
       <Heading name="Provider" />
       <p>
-        Ethers EIP-1193 Compliant (see `https://eips.ethereum.org/EIPS/eip-1193``)
+        Ethers EIP-1193 Compliant (see
+        `https://eips.ethereum.org/EIPS/eip-1193``)
       </p>
       <Heading name="RPC" />
       <p>RPC_URL=`https://api.sushirelay.com/v1`</p>
@@ -28,8 +32,8 @@ export default function Reference() {
       <Heading name="hookProvider" />
       <p>
         Accepts a collector function to retrieve specific values from state.
-        Only re renders the component when return value deeply changes.
-        Provides Internal state management for interfacing with Metamask.
+        Only re renders the component when return value deeply changes. Provides
+        Internal state management for interfacing with Metamask.
       </p>
     </div>
   );
@@ -41,7 +45,7 @@ function Heading({ name }) {
     <h2
       id={name}
       style={{
-        background: location.hash === `#${name}` ? "yellow" : undefined,
+        background: location.hash === `#${name}` ? 'yellow' : undefined,
       }}
     >
       {name}
