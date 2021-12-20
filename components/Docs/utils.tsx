@@ -1,16 +1,16 @@
-import * as React from "react";
+import * as React from 'react';
 
 export function classnames(...args: (string | undefined | null)[]) {
-  return args.filter(Boolean).join(" ");
+  return args.filter(Boolean).join(' ');
 }
 
 export function useAnalytics() {
   React.useEffect(() => {
-    const dev = window.location.host.includes("localhost");
+    const dev = window.location.host.includes('localhost');
 
     if (!dev) {
-      const script = document.createElement("script");
-      script.src = "https://www.googletagmanager.com/gtag/js?id=";
+      const script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=';
 
       document.body.appendChild(script);
 
@@ -22,9 +22,9 @@ export function useAnalytics() {
           dataLayer.push(arguments);
         }
         // @ts-ignore
-        gtag("js", new Date());
+        gtag('js', new Date());
         // @ts-ignore
-        gtag("config", "G-");
+        gtag('config', 'G-');
       };
 
       return () => {

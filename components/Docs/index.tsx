@@ -1,21 +1,21 @@
-import * as React from "react";
+import * as React from 'react';
 import {
   Accordion,
   AccordionButton,
   AccordionPanel,
   AccordionItem,
-} from "@reach/accordion";
-import styles from "./styles.module.scss";
-import { Link, useLocation, Route, Switch } from "react-router-dom";
-import data from "./data";
-import { classnames } from "./utils";
+} from '@reach/accordion';
+import styles from './styles.module.scss';
+import { Link, useLocation, Route, Switch } from 'react-router-dom';
+import data from './data';
+import { classnames } from './utils';
 
 export default function Docs() {
   const location = useLocation();
 
   const routes = React.useMemo(() => {
     // { [x: string]: any; introduction?: { name: string; slug: string; children: { overview: { name: string; slug: string; component: () => JSX.Element; section: string; }; gettingHelp: { name: string; slug: string; component: () => JSX.Element; section: string; }; }; }; faq?: { name: string; slug: string; children: { overview: { name: string; slug: string; component: () => JSX.Element; section: string; }; walletconnect: { name: string; slug: string; component: () => JSX.Element; section: string; }; frontrunningProtection: { name: string; slug: string; component: () => JSX.Element; section: string; }; }; }; apiReference?: { name: string; slug: string; children: { useStore: { name: string; slug: string; component: () => JSX.Element; section: string; }; kbarProvider: { name: string; slug: string; component: () => JSX.Element; section: string; }; }; }; }) {
-      // @ts-ignore
+    // @ts-ignore
     function generateRoute(tree) {
       return Object.keys(tree).map((key) => {
         const item = tree[key];
@@ -25,7 +25,7 @@ export default function Docs() {
         return (
           <Route
             key={key}
-            path={item.slug.split("#")[0]}
+            path={item.slug.split('#')[0]}
             component={item.component}
           />
         );
@@ -58,8 +58,8 @@ export default function Docs() {
                                 // @ts-ignore
                                 !child.component && styles.comingSoon,
                                 (location.pathname + location.hash).includes(
-                                  child.slug
-                                ) && styles.active
+                                  child.slug,
+                                ) && styles.active,
                               )}
                             >
                               {child.name}

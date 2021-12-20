@@ -1,7 +1,7 @@
-import Highlight, { defaultProps } from "prism-react-renderer";
-import * as React from "react";
-import { classnames } from "./utils";
-import styles from "./Code.module.scss";
+import Highlight, { defaultProps } from 'prism-react-renderer';
+import * as React from 'react';
+import { classnames } from './utils';
+import styles from './Code.module.scss';
 
 //import theme from "prism-react-renderer/themes/nightOwl";
 
@@ -29,73 +29,73 @@ export default function Code(props: Props) {
 /** */
 const theme = {
   plain: {
-    color: "var(--foreground)",
+    color: 'var(--foreground)',
   },
   styles: [
     {
-      types: ["comment"],
+      types: ['comment'],
       style: {
-        color: "var(--foreground)",
+        color: 'var(--foreground)',
       },
     },
     {
-      types: ["builtin"],
+      types: ['builtin'],
       style: {
-        color: "var(--foreground)",
+        color: 'var(--foreground)',
       },
     },
     {
-      types: ["number", "variable", "inserted"],
+      types: ['number', 'variable', 'inserted'],
       style: {
-        color: "var(--foreground)",
+        color: 'var(--foreground)',
       },
     },
     {
-      types: ["operator"],
+      types: ['operator'],
       style: {
-        color: "var(--foreground)",
+        color: 'var(--foreground)',
       },
     },
     {
-      types: ["constant", "char"],
+      types: ['constant', 'char'],
       style: {
-        color: "var(--foreground)",
+        color: 'var(--foreground)',
       },
     },
     {
-      types: ["tag"],
+      types: ['tag'],
       style: {
-        color: "var(--foreground)",
+        color: 'var(--foreground)',
       },
     },
     {
-      types: ["attr-name"],
+      types: ['attr-name'],
       style: {
-        color: "var(--foreground)",
+        color: 'var(--foreground)',
       },
     },
     {
-      types: ["deleted", "string"],
+      types: ['deleted', 'string'],
       style: {
-        color: "var(--foreground)",
+        color: 'var(--foreground)',
       },
     },
     {
-      types: ["changed", "punctuation"],
+      types: ['changed', 'punctuation'],
       style: {
-        color: "var(--foreground)",
+        color: 'var(--foreground)',
       },
     },
     {
-      types: ["function", "keyword"],
+      types: ['function', 'keyword'],
       style: {
-        color: "var(--foreground)",
+        color: 'var(--foreground)',
       },
     },
     {
-      types: ["class-name"],
+      types: ['class-name'],
       style: {
-        color: "var(--foreground)",
+        color: 'var(--foreground)',
       },
     },
   ],

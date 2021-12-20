@@ -1,0 +1,9 @@
+.next
+build/
+cache
+dist/
+public/
+*.min.js
+*.json
+*.css
+*.scss

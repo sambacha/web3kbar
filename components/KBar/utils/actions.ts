@@ -12,12 +12,12 @@ const action = (handleActionTheme: (value: boolean) => void): Action[] => {
       keywords: 'back',
       icon: `🍱`,
       perform: () => router.push('/'),
-    },  
+    },
     {
       id: 'resumeAction',
       name: 'Resume',
       shortcut: ['r'],
-      keywords: 'resume cv'
+      keywords: 'resume cv',
     },
     createAction({
       name: 'Sushi Relay',
@@ -32,7 +32,11 @@ const action = (handleActionTheme: (value: boolean) => void): Action[] => {
       shortcut: ['t', '1'],
       keywords: 'trending assets',
       icon: `🔥`,
-      perform: () => window.open('https://analytics.sushi.com/tokens/0xd084944d3c05cd115c09d072b9f44ba3e0e45921', '_blank'),
+      perform: () =>
+        window.open(
+          'https://analytics.sushi.com/tokens/0xd084944d3c05cd115c09d072b9f44ba3e0e45921',
+          '_blank',
+        ),
     },
     {
       name: 'Lido Finance',
@@ -40,7 +44,11 @@ const action = (handleActionTheme: (value: boolean) => void): Action[] => {
       shortcut: ['t', '2'],
       keywords: 'trending assets',
       icon: `🐳`,
-      perform: () => window.open('https://analytics.sushi.com/tokens/0x5a98fcbea516cf06857215779fd812ca3bef1b32', '_blank'),
+      perform: () =>
+        window.open(
+          'https://analytics.sushi.com/tokens/0x5a98fcbea516cf06857215779fd812ca3bef1b32',
+          '_blank',
+        ),
     },
     {
       name: 'Olympus',
@@ -48,7 +56,11 @@ const action = (handleActionTheme: (value: boolean) => void): Action[] => {
       shortcut: ['t', '3'],
       keywords: 'trending assets',
       icon: `🚜`,
-      perform: () => window.open('https://analytics.sushi.com/tokens/0x383518188c0c6d7730d91b2c03a03c837814a899', '_blank'),
+      perform: () =>
+        window.open(
+          'https://analytics.sushi.com/tokens/0x383518188c0c6d7730d91b2c03a03c837814a899',
+          '_blank',
+        ),
     },
     {
       name: 'Get Support',

@@ -1,12 +1,12 @@
-import * as React from "react";
-import Code from "./Code";
+import * as React from 'react';
+import Code from './Code';
 
 export default function OpenMev() {
   return (
     <div>
       <h1>Interfacing with state</h1>
       <p>
-        While it is great that kbar exposes some primitive components; e.g.{" "}
+        While it is great that kbar exposes some primitive components; e.g.{' '}
         <code>KBarSearch</code>, <code>KBarResults</code>, etc., what if you
         wanted to build some custom components, perhaps a set of breadcrumbs
         that display the current action and it's ancestor actions?
@@ -50,7 +50,7 @@ function Breadcrumbs() {
       />
       <p>
         Pass a callback to <code>useKBar</code> and retrieve only what you
-        collect. This pattern was introduced to me by my friend{" "}
+        collect. This pattern was introduced to me by my friend{' '}
         <a href="https://twitter.com/prevwong" target="_blank" rel="noreferrer">
           Prev
         </a>
